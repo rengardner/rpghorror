@@ -1,0 +1,276 @@
+/* fonts:
+english pix = minecraft
+jpn pix = font-family: 'DotGothic16', sans-serif;
+jpn artsy = font-family: 'Rampart One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+/* body */
+body {
+  background-image:url("images/background.gif"); /* image from https://xuethms.tumblr.com/post/654331801411665920/davehugs-every-pixel-background-ive-made-for-my */
+  cursor: url(http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/ad1ae9084485dac.png);
+  margin-bottom:200px;
+}
+
+/* text and such */
+
+h1, h2 {
+  color:#FF005B;
+  text-align:center;
+  font-family:minecraft;
+}
+
+p {
+  font-family:monospace;
+}
+
+h2 a {
+  background-color:#FF7D10;
+  overflow:hidden;
+  color: #fff;
+  padding:2px;
+  text-decoration:none;
+  padding:10px;
+
+}
+
+h2 a:hover {
+    background-color: #FF005B;
+}
+
+.def {
+  font-size:23px
+}
+
+.def p {
+  font-family: 'Titillium Web', sans-serif;
+  color:#0A0310;
+}
+
+/* definition container */
+
+.def-container {
+  border: 2px solid #49007E;
+  padding:5px;
+  background-color: #FF7D10;
+  border-radius: 2%;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 2px 2px #fff;
+}
+
+/* game description */
+
+.jpn-container{
+  background:#0A0310;
+  position:sticky;
+  top:0;
+}
+.jpn-name {
+  font-family: 'DotGothic16', sans-serif;
+  color: #FF005B;
+  text-align:center;
+}
+
+.about {
+  background-color:#0A0310;
+  opacity:1;
+  position:absolute;
+  overflow:hidden;
+  width:30%;
+  height:140px;
+  padding:10px;
+  z-index:9;
+  margin-bottom:10px;
+  overflow:scroll;
+  }
+
+.about i {
+  color:#FFB238;
+}
+
+.about a {
+  background-color:#FF7D10;
+  overflow:hidden;
+  color: #fff;
+  padding:2px;
+  text-decoration:none;
+}
+
+.about a:hover {
+  background-color: #FF005B;
+}
+
+blockquote {
+  border-left:4px solid #49007E;
+  padding:5px;
+  margin:4px;
+  font-family:monospace;
+  font-style:italic;
+}
+
+/* page css */
+
+/* text + image container */
+
+.float-container {
+  width:50%;
+  margin:auto;
+  display:flex;
+  overflow:hidden;
+  margin-top:15px;
+}
+
+.float-child1 {
+  width: 50%;
+  max-height:650px;
+  float: left;
+  padding:10px;
+  overflow:scroll;
+}
+
+
+/*text*/
+
+#about {
+  background-color:#0A0310;
+  opacity:1;
+  padding:0px 10px 10px 10px;
+  z-index:9;
+  float:left;
+  height:650px;
+  overflow:scroll;
+}
+
+#about b{
+  color:#FF7D10;
+  font-weight:900;
+}
+
+#about i{
+  color:#FFB238;
+}
+
+#about a{
+  background-color:#FF7D10;
+  overflow:hidden;
+  color: #fff;
+  padding:2px;
+  text-decoration:none;
+  font-family: 'DotGothic16', sans-serif;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+#about a:hover{
+  background-color: #FF005B;
+
+}
+/*images*/
+
+.image-container {
+  width:100%;
+  padding:3px;
+}
+
+/* there's gotta be a better way to do these caption animations but idk it ¯\_(ツ)_/¯*/
+
+/*image 1*/
+
+.image1 {
+  object-fit: contain;
+  max-height:500px;
+}
+
+.caption1 {
+    opacity:0;
+    height:0px;
+    width:0px;
+    overflow:hidden;
+    background-color:#49007E;
+    float:right;
+}
+
+.caption1text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  color:#FFB238;
+  text-align:center;
+  margin:5px;
+
+}
+
+.image1:hover ~ .caption1 {
+  opacity:1;
+  width:100%;
+  height:30px;
+  transition:width 2s;
+}
+
+/*image 2*/
+
+.image2 {
+  object-fit: contain;
+}
+
+.caption2 {
+    font-family: 'Titillium Web', sans-serif;
+    opacity:0;
+    height:0px;
+    width:0px;
+    float:right;
+    background-color:#49007E;
+    font-size:12px;
+    color:#FFB238;
+    overflow:hidden;
+
+}
+
+.caption2text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  color:#FFB238;
+  text-align:center;
+  margin:5px;
+
+}
+
+.image2:hover ~ .caption2 {
+  opacity:1;
+  width:100%;
+  height:30px;
+  transition:width 2s;
+}
+
+/*image 3*/
+
+.image3 {
+  object-fit: contain;
+}
+
+.caption3 {
+    opacity:0;
+    height:0px;
+    width:0px;
+    float:right;
+    background-color:#49007E;
+    overflow:hidden;
+
+}
+
+.caption3text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  color:#FFB238;
+  text-align:center;
+  margin:5px;
+
+}
+
+.image3:hover ~ .caption3 {
+  opacity:1;
+  width:100%;
+  height:30px;
+  transition:width 2s;
+}
